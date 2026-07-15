@@ -1,0 +1,819 @@
+[
+  {
+    "id": 1,
+    "nom": "iPhone 17 Pro Max",
+    "marque": "Apple",
+    "categorie": "smartphones",
+    "prix": 1499,
+    "image": "images/produits/iphone-17-pro-max.png",
+    "description": "Un smartphone haut de gamme conçu pour offrir des performances exceptionnelles, une expérience photo professionnelle et une autonomie améliorée.",
+    "caracteristiques": {
+        "ecran": "6.9 pouces Super Retina XDR OLED",
+        "processeur": "Apple A19 Pro",
+        "ram": "12 Go",
+        "stockage": "256 Go",
+        "batterie": "5000 mAh",
+        "camera": "Triple caméra 48 MP",
+        "systeme": "iOS"
+    },
+    "couleurs": [
+        "Noir Titane",
+        "Argent",
+        "Bleu Profond"
+    ],
+    "images": [
+        "images/produits/iphone-17-pro-max.png",
+        "images/produits/iphone-17-pro-max-face.png",
+        "images/produits/iphone-17-pro-max-dos.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "24 mois"
+  },
+
+  {
+    "id": 2,
+    "nom": "Samsung Galaxy S26 Ultra",
+    "marque": "Samsung",
+    "categorie": "smartphones",
+    "prix": 1299,
+    "image": "images/produits/samsung-galaxy-s26-ultra.png",
+    "description": "Un smartphone premium combinant puissance, intelligence artificielle, photographie avancée et design élégant.",
+    "caracteristiques": {
+        "ecran": "6.9 pouces Dynamic AMOLED 2X",
+        "processeur": "Snapdragon 8 Elite",
+        "ram": "12 Go",
+        "stockage": "256 Go",
+        "batterie": "5000 mAh",
+        "camera": "200 MP + Ultra grand angle",
+        "systeme": "Android"
+    },
+    "couleurs": [
+        "Noir",
+        "Gris",
+        "Bleu"
+    ],
+    "images": [
+        "images/produits/samsung-galaxy-s26-ultra.png",
+        "images/produits/samsung-galaxy-s26-face.png",
+        "images/produits/samsung-galaxy-s26-dos.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "24 mois"
+  },
+
+  {
+    "id": 3,
+    "nom": "Google Pixel 10 Pro",
+    "marque": "Google",
+    "categorie": "smartphones",
+    "prix": 999,
+    "image": "images/produits/google-pixel-10-pro.png",
+    "description": "Un smartphone intelligent équipé d'une caméra avancée et d'une intelligence artificielle Google optimisée.",
+    "caracteristiques": {
+        "ecran": "6.7 pouces OLED",
+        "processeur": "Google Tensor G5",
+        "ram": "16 Go",
+        "stockage": "256 Go",
+        "batterie": "5100 mAh",
+        "camera": "50 MP avec IA",
+        "systeme": "Android"
+    },
+    "couleurs": [
+        "Obsidienne",
+        "Porcelaine",
+        "Vert Sauge"
+    ],
+    "images": [
+        "images/produits/google-pixel-10-pro.png",
+        "images/produits/google-pixel-10-face.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "24 mois"
+  },
+
+  {
+    "id": 4,
+    "nom": "Xiaomi 15 Ultra",
+    "marque": "Xiaomi",
+    "categorie": "smartphones",
+    "prix": 899,
+    "image": "images/produits/xiaomi-15-ultra.png",
+    "description": "Un smartphone puissant avec une excellente qualité photo et des performances adaptées aux utilisateurs exigeants.",
+    "caracteristiques": {
+        "ecran": "6.8 pouces AMOLED",
+        "processeur": "Snapdragon 8 Elite",
+        "ram": "16 Go",
+        "stockage": "512 Go",
+        "batterie": "5300 mAh",
+        "camera": "200 MP Leica",
+        "systeme": "Android"
+    },
+    "couleurs": [
+        "Noir",
+        "Blanc",
+        "Vert"
+    ],
+    "images": [
+        "images/produits/xiaomi-15-ultra.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "24 mois"
+  },
+
+  {
+    "id": 5,
+    "nom": "OnePlus 13 Pro",
+    "marque": "OnePlus",
+    "categorie": "smartphones",
+    "prix": 849,
+    "image": "images/produits/oneplus-13-pro.png",
+    "description": "Un smartphone rapide et élégant offrant une grande fluidité grâce à un matériel performant.",
+    "caracteristiques": {
+        "ecran": "6.8 pouces AMOLED 120Hz",
+        "processeur": "Snapdragon 8 Elite",
+        "ram": "12 Go",
+        "stockage": "256 Go",
+        "batterie": "5200 mAh",
+        "camera": "50 MP triple caméra",
+        "systeme": "Android"
+    },
+    "couleurs": [
+        "Noir",
+        "Bleu"
+    ],
+    "images": [
+        "images/produits/oneplus-13-pro.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "24 mois"
+  },
+
+  {
+    "id": 6,
+    "nom": "MacBook Pro M5",
+    "marque": "Apple",
+    "categorie": "ordinateurs",
+    "prix": 2199,
+    "image": "images/produits/macbook-pro-m5.png",
+    "description": "Un ordinateur professionnel puissant conçu pour la création, le développement et les tâches exigeantes.",
+    "caracteristiques": {
+        "ecran": "14 pouces Liquid Retina XDR",
+        "processeur": "Apple M5",
+        "ram": "16 Go",
+        "stockage": "512 Go SSD",
+        "autonomie": "Jusqu'à 20 heures",
+        "carte_graphique": "GPU intégré",
+        "systeme": "macOS"
+    },
+    "couleurs": [
+        "Gris sidéral",
+        "Argent"
+    ],
+    "images": [
+        "images/produits/macbook-pro-m5.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "24 mois"
+  },
+
+  {
+    "id": 7,
+    "nom": "Dell XPS 16",
+    "marque": "Dell",
+    "categorie": "ordinateurs",
+    "prix": 1799,
+    "image": "images/produits/dell-xps-16.png",
+    "description": "Un ordinateur portable premium offrant un design élégant et des performances élevées.",
+    "caracteristiques": {
+        "ecran": "16 pouces OLED",
+        "processeur": "Intel Core Ultra 9",
+        "ram": "32 Go",
+        "stockage": "1 To SSD",
+        "autonomie": "Jusqu'à 15 heures",
+        "carte_graphique": "NVIDIA RTX",
+        "systeme": "Windows 11"
+    },
+    "couleurs": [
+        "Gris",
+        "Noir"
+    ],
+    "images": [
+        "images/produits/dell-xps-16.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "24 mois"
+  },
+
+  {
+    "id": 8,
+    "nom": "ASUS ROG Strix G16",
+    "marque": "ASUS",
+    "categorie": "ordinateurs",
+    "prix": 1599,
+    "image": "images/produits/asus-rog-strix-g16.png",
+    "description": "Un ordinateur gaming conçu pour offrir une expérience de jeu fluide et immersive.",
+    "caracteristiques": {
+        "ecran": "16 pouces 240Hz",
+        "processeur": "Intel Core i9",
+        "ram": "32 Go",
+        "stockage": "1 To SSD",
+        "carte_graphique": "NVIDIA RTX 5070",
+        "clavier": "RGB",
+        "systeme": "Windows 11"
+    },
+    "couleurs": [
+        "Noir"
+    ],
+    "images": [
+        "images/produits/asus-rog-strix-g16.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "24 mois"
+  },
+
+  {
+    "id": 9,
+    "nom": "HP Spectre x360",
+    "marque": "HP",
+    "categorie": "ordinateurs",
+    "prix": 1399,
+    "image": "images/produits/hp-spectre-x360.png",
+    "description": "Un ordinateur convertible élégant combinant mobilité, puissance et polyvalence.",
+    "caracteristiques": {
+        "ecran": "14 pouces tactile OLED",
+        "processeur": "Intel Core Ultra 7",
+        "ram": "16 Go",
+        "stockage": "512 Go SSD",
+        "batterie": "66 Wh",
+        "systeme": "Windows 11"
+    },
+    "couleurs": [
+        "Noir",
+        "Argent"
+    ],
+    "images": [
+        "images/produits/hp-spectre-x360.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "24 mois"
+  },
+
+  {
+    "id": 10,
+    "nom": "Lenovo ThinkPad X1 Carbon",
+    "marque": "Lenovo",
+    "categorie": "ordinateurs",
+    "prix": 1499,
+    "image": "images/produits/lenovo-thinkpad-x1-carbon.png",
+    "description": "Un ordinateur professionnel léger et fiable conçu pour les entreprises et les professionnels.",
+    "caracteristiques": {
+        "ecran": "14 pouces IPS",
+        "processeur": "Intel Core Ultra 7",
+        "ram": "16 Go",
+        "stockage": "512 Go SSD",
+        "autonomie": "Jusqu'à 18 heures",
+        "systeme": "Windows 11 Pro"
+    },
+    "couleurs": [
+        "Noir"
+    ],
+    "images": [
+        "images/produits/lenovo-thinkpad-x1-carbon.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "24 mois"
+  },
+  
+  {
+    "id": 11,
+    "nom": "AirPods Pro 3",
+    "marque": "Apple",
+    "categorie": "audio",
+    "prix": 249,
+    "image": "images/produits/airpods-pro-3.png",
+    "description": "Des écouteurs sans fil premium offrant une qualité sonore exceptionnelle, une réduction de bruit avancée et un confort optimal.",
+    "caracteristiques": {
+        "type": "Écouteurs sans fil",
+        "connectivite": "Bluetooth 5.4",
+        "autonomie": "Jusqu'à 30 heures avec boîtier",
+        "audio": "Audio spatial",
+        "resistance": "Résistance à l'eau IPX4",
+        "compatibilite": "iOS et appareils Bluetooth"
+    },
+    "couleurs": [
+        "Blanc"
+    ],
+    "images": [
+        "images/produits/airpods-pro-3.png",
+        "images/produits/airpods-pro-3-boitier.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "12 mois"
+  },
+
+  {
+    "id": 12,
+    "nom": "Sony WH-1000XM6",
+    "marque": "Sony",
+    "categorie": "audio",
+    "prix": 449,
+    "image": "images/produits/sony-wh1000xm6.png",
+    "description": "Un casque audio haut de gamme avec une réduction de bruit intelligente et une expérience sonore immersive.",
+    "caracteristiques": {
+        "type": "Casque sans fil",
+        "connectivite": "Bluetooth 5.3",
+        "autonomie": "Jusqu'à 40 heures",
+        "audio": "Hi-Res Audio",
+        "microphone": "Double microphone intelligent",
+        "charge": "USB-C rapide"
+    },
+    "couleurs": [
+        "Noir",
+        "Argent"
+    ],
+    "images": [
+        "images/produits/sony-wh1000xm6.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "24 mois"
+  },
+
+  {
+    "id": 13,
+    "nom": "Bose QuietComfort Ultra",
+    "marque": "Bose",
+    "categorie": "audio",
+    "prix": 429,
+    "image": "images/produits/bose-quietcomfort-ultra.png",
+    "description": "Un casque premium conçu pour offrir un confort exceptionnel et une immersion sonore complète.",
+    "caracteristiques": {
+        "type": "Casque Bluetooth",
+        "connectivite": "Bluetooth 5.1",
+        "autonomie": "Jusqu'à 24 heures",
+        "audio": "Immersive Audio",
+        "reduction_bruit": "Active",
+        "charge": "USB-C"
+    },
+    "couleurs": [
+        "Noir",
+        "Blanc"
+    ],
+    "images": [
+        "images/produits/bose-quietcomfort-ultra.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "24 mois"
+  },
+
+  {
+    "id": 14,
+    "nom": "Samsung Galaxy Buds 4 Pro",
+    "marque": "Samsung",
+    "categorie": "audio",
+    "prix": 199,
+    "image": "images/produits/galaxy-buds-4-pro.png",
+    "description": "Des écouteurs intelligents offrant un son détaillé, une excellente autonomie et une connexion rapide avec les appareils Galaxy.",
+    "caracteristiques": {
+        "type": "Écouteurs sans fil",
+        "connectivite": "Bluetooth 5.4",
+        "autonomie": "Jusqu'à 24 heures",
+        "audio": "Hi-Fi 24 bits",
+        "reduction_bruit": "ANC",
+        "resistance": "IPX7"
+    },
+    "couleurs": [
+        "Noir",
+        "Blanc"
+    ],
+    "images": [
+        "images/produits/galaxy-buds-4-pro.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "12 mois"
+  },
+
+  {
+    "id": 15,
+    "nom": "JBL Charge 6",
+    "marque": "JBL",
+    "categorie": "audio",
+    "prix": 179,
+    "image": "images/produits/jbl-charge-6.png",
+    "description": "Une enceinte portable puissante offrant un son dynamique et une grande autonomie pour vos déplacements.",
+    "caracteristiques": {
+        "type": "Enceinte Bluetooth",
+        "puissance": "40W",
+        "autonomie": "Jusqu'à 24 heures",
+        "connectivite": "Bluetooth 5.3",
+        "resistance": "IP67",
+        "charge": "USB-C"
+    },
+    "couleurs": [
+        "Noir",
+        "Bleu",
+        "Rouge"
+    ],
+    "images": [
+        "images/produits/jbl-charge-6.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "12 mois"
+  },
+
+  {
+    "id": 16,
+    "nom": "Apple Watch Series 12",
+    "marque": "Apple",
+    "categorie": "objets-connectes",
+    "prix": 599,
+    "image": "images/produits/apple-watch-series-12.png",
+    "description": "Une montre connectée élégante qui combine suivi de santé, sport et communication intelligente.",
+    "caracteristiques": {
+        "ecran": "OLED Retina",
+        "processeur": "Apple S12",
+        "stockage": "64 Go",
+        "autonomie": "Jusqu'à 36 heures",
+        "capteurs": "Fréquence cardiaque, GPS, température",
+        "systeme": "watchOS"
+    },
+    "couleurs": [
+        "Noir",
+        "Argent",
+        "Or"
+    ],
+    "images": [
+        "images/produits/apple-watch-series-12.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "12 mois"
+  },
+
+  {
+    "id": 17,
+    "nom": "Samsung Galaxy Watch 8 Ultra",
+    "marque": "Samsung",
+    "categorie": "objets-connectes",
+    "prix": 649,
+    "image": "images/produits/galaxy-watch-8-ultra.png",
+    "description": "Une montre connectée robuste pensée pour le sport, la santé et une utilisation quotidienne avancée.",
+    "caracteristiques": {
+        "ecran": "Super AMOLED",
+        "processeur": "Exynos W1000",
+        "stockage": "32 Go",
+        "autonomie": "Jusqu'à 80 heures",
+        "capteurs": "GPS, ECG, fréquence cardiaque",
+        "systeme": "Wear OS"
+    },
+    "couleurs": [
+        "Titane Noir",
+        "Titane Gris"
+    ],
+    "images": [
+        "images/produits/galaxy-watch-8-ultra.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "24 mois"
+  },
+
+  {
+    "id": 18,
+    "nom": "Google Pixel Watch 4",
+    "marque": "Google",
+    "categorie": "objets-connectes",
+    "prix": 399,
+    "image": "images/produits/google-pixel-watch-4.png",
+    "description": "Une montre intelligente intégrée à l'écosystème Google avec des fonctions avancées de santé.",
+    "caracteristiques": {
+        "ecran": "AMOLED",
+        "processeur": "Google Tensor Wear",
+        "autonomie": "Jusqu'à 48 heures",
+        "capteurs": "Santé et activité",
+        "connectivite": "Bluetooth et Wi-Fi",
+        "systeme": "Wear OS"
+    },
+    "couleurs": [
+        "Noir",
+        "Argent"
+    ],
+    "images": [
+        "images/produits/google-pixel-watch-4.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "12 mois"
+  },
+
+  {
+    "id": 19,
+    "nom": "Garmin Fenix 8",
+    "marque": "Garmin",
+    "categorie": "objets-connectes",
+    "prix": 999,
+    "image": "images/produits/garmin-fenix-8.png",
+    "description": "Une montre sportive professionnelle conçue pour les athlètes et les amateurs d'aventure.",
+    "caracteristiques": {
+        "ecran": "AMOLED",
+        "autonomie": "Jusqu'à 29 jours",
+        "gps": "Multi-bandes",
+        "capteurs": "Altitude, cardio, sommeil",
+        "resistance": "Étanchéité 10 ATM",
+        "systeme": "Garmin OS"
+    },
+    "couleurs": [
+        "Noir",
+        "Gris"
+    ],
+    "images": [
+        "images/produits/garmin-fenix-8.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "24 mois"
+  },
+
+  {
+    "id": 20,
+    "nom": "Xiaomi Smart Band 10",
+    "marque": "Xiaomi",
+    "categorie": "objets-connectes",
+    "prix": 69,
+    "image": "images/produits/xiaomi-smart-band-10.png",
+    "description": "Un bracelet connecté léger et abordable avec suivi sportif et fonctionnalités intelligentes.",
+    "caracteristiques": {
+        "ecran": "AMOLED couleur",
+        "autonomie": "Jusqu'à 21 jours",
+        "capteurs": "Cardio, sommeil, activité",
+        "connectivite": "Bluetooth 5.4",
+        "resistance": "5 ATM",
+        "compatibilite": "Android et iOS"
+    },
+    "couleurs": [
+        "Noir",
+        "Bleu",
+        "Rose"
+    ],
+    "images": [
+        "images/produits/xiaomi-smart-band-10.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "12 mois"
+  },
+
+  {
+    "id": 21,
+    "nom": "PlayStation 6",
+    "marque": "Sony",
+    "categorie": "gaming",
+    "prix": 599,
+    "image": "images/produits/playstation-6.png",
+    "description": "Une console nouvelle génération offrant une expérience de jeu immersive avec des graphismes avancés et des performances exceptionnelles.",
+    "caracteristiques": {
+        "processeur": "AMD Custom Zen",
+        "stockage": "1 To SSD",
+        "resolution": "8K HDR",
+        "connectivite": "Wi-Fi 7 et Bluetooth",
+        "manette": "DualSense nouvelle génération",
+        "systeme": "PlayStation OS"
+    },
+    "couleurs": [
+        "Blanc",
+        "Noir"
+    ],
+    "images": [
+        "images/produits/playstation-6.png",
+        "images/produits/playstation-6-manette.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "24 mois"
+  },
+
+  {
+    "id": 22,
+    "nom": "Xbox Series X Pro",
+    "marque": "Microsoft",
+    "categorie": "gaming",
+    "prix": 699,
+    "image": "images/produits/xbox-series-x-pro.png",
+    "description": "Une console puissante conçue pour offrir des performances élevées, des chargements rapides et une expérience gaming premium.",
+    "caracteristiques": {
+        "processeur": "AMD Zen 5",
+        "stockage": "2 To SSD",
+        "resolution": "4K Ultra HD",
+        "ram": "24 Go",
+        "connectivite": "Wi-Fi 7",
+        "systeme": "Xbox OS"
+    },
+    "couleurs": [
+        "Noir"
+    ],
+    "images": [
+        "images/produits/xbox-series-x-pro.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "24 mois"
+  },
+
+  {
+    "id": 23,
+    "nom": "ASUS ROG Ally X",
+    "marque": "ASUS",
+    "categorie": "gaming",
+    "prix": 799,
+    "image": "images/produits/asus-rog-ally-x.png",
+    "description": "Une console portable gaming permettant de jouer à vos jeux PC partout avec une grande puissance.",
+    "caracteristiques": {
+        "ecran": "7 pouces Full HD 120Hz",
+        "processeur": "AMD Ryzen Z2 Extreme",
+        "ram": "24 Go",
+        "stockage": "1 To SSD",
+        "batterie": "80 Wh",
+        "systeme": "Windows 11"
+    },
+    "couleurs": [
+        "Noir"
+    ],
+    "images": [
+        "images/produits/asus-rog-ally-x.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "24 mois"
+  },
+
+  {
+    "id": 24,
+    "nom": "Logitech G Pro X Superlight",
+    "marque": "Logitech",
+    "categorie": "gaming",
+    "prix": 159,
+    "image": "images/produits/logitech-g-pro-x-superlight.png",
+    "description": "Une souris gaming professionnelle ultra légère conçue pour les joueurs compétitifs.",
+    "caracteristiques": {
+        "type": "Souris sans fil",
+        "poids": "60 grammes",
+        "capteur": "HERO 2",
+        "autonomie": "Jusqu'à 95 heures",
+        "connectivite": "LIGHTSPEED Wireless",
+        "dpi": "32000 DPI"
+    },
+    "couleurs": [
+        "Noir",
+        "Blanc"
+    ],
+    "images": [
+        "images/produits/logitech-g-pro-x-superlight.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "24 mois"
+  },
+
+  {
+    "id": 25,
+    "nom": "Razer BlackWidow V4",
+    "marque": "Razer",
+    "categorie": "gaming",
+    "prix": 189,
+    "image": "images/produits/razer-blackwidow-v4.png",
+    "description": "Un clavier gaming mécanique offrant une excellente précision avec un éclairage RGB personnalisable.",
+    "caracteristiques": {
+        "type": "Clavier mécanique",
+        "switch": "Razer Green Switch",
+        "eclairage": "RGB Chroma",
+        "connexion": "USB-C",
+        "touches": "Programmables",
+        "compatibilite": "Windows et Mac"
+    },
+    "couleurs": [
+        "Noir"
+    ],
+    "images": [
+        "images/produits/razer-blackwidow-v4.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "24 mois"
+  },
+
+  {
+    "id": 26,
+    "nom": "Chargeur Anker 100W GaN",
+    "marque": "Anker",
+    "categorie": "accessoires",
+    "prix": 89,
+    "image": "images/produits/anker-chargeur-100w.png",
+    "description": "Un chargeur compact et puissant permettant de recharger rapidement plusieurs appareils.",
+    "caracteristiques": {
+        "puissance": "100W",
+        "technologie": "GaN",
+        "ports": "USB-C et USB-A",
+        "compatibilite": "Smartphones, tablettes et ordinateurs",
+        "protection": "Surcharge et surchauffe"
+    },
+    "couleurs": [
+        "Noir",
+        "Blanc"
+    ],
+    "images": [
+        "images/produits/anker-chargeur-100w.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "18 mois"
+  },
+
+  {
+    "id": 27,
+    "nom": "Baseus Power Bank 20000mAh",
+    "marque": "Baseus",
+    "categorie": "accessoires",
+    "prix": 69,
+    "image": "images/produits/baseus-powerbank.png",
+    "description": "Une batterie externe haute capacité idéale pour recharger vos appareils en déplacement.",
+    "caracteristiques": {
+        "capacite": "20000 mAh",
+        "puissance": "65W",
+        "ports": "USB-C et USB-A",
+        "affichage": "Écran numérique",
+        "compatibilite": "Universelle"
+    },
+    "couleurs": [
+        "Noir",
+        "Gris"
+    ],
+    "images": [
+        "images/produits/baseus-powerbank.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "12 mois"
+  },
+
+  {
+    "id": 28,
+    "nom": "Câble USB-C UGREEN",
+    "marque": "UGREEN",
+    "categorie": "accessoires",
+    "prix": 25,
+    "image": "images/produits/ugreen-usb-c.png",
+    "description": "Un câble durable permettant une charge rapide et un transfert de données efficace.",
+    "caracteristiques": {
+        "type": "USB-C vers USB-C",
+        "puissance": "100W",
+        "transfert": "10Gbps",
+        "longueur": "2 mètres",
+        "materiau": "Nylon renforcé"
+    },
+    "couleurs": [
+        "Noir"
+    ],
+    "images": [
+        "images/produits/ugreen-usb-c.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "12 mois"
+  },
+
+  {
+    "id": 29,
+    "nom": "Support ordinateur aluminium",
+    "marque": "Generic",
+    "categorie": "accessoires",
+    "prix": 39,
+    "image": "images/produits/support-aluminium.png",
+    "description": "Un support ergonomique conçu pour améliorer le confort d'utilisation et l'organisation du bureau.",
+    "caracteristiques": {
+        "materiau": "Aluminium",
+        "compatibilite": "Ordinateurs portables 11 à 17 pouces",
+        "design": "Pliable",
+        "utilisation": "Bureau et travail"
+    },
+    "couleurs": [
+        "Argent"
+    ],
+    "images": [
+        "images/produits/support-aluminium.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "12 mois"
+  },
+
+  {
+    "id": 30,
+    "nom": "Coque Premium MagSafe",
+    "marque": "Compatible Apple",
+    "categorie": "accessoires",
+    "prix": 49,
+    "image": "images/produits/coque-magsafe.png",
+    "description": "Une coque élégante offrant une protection renforcée tout en conservant un design fin et moderne.",
+    "caracteristiques": {
+        "materiau": "Silicone renforcé",
+        "compatibilite": "iPhone dernière génération",
+        "technologie": "MagSafe",
+        "protection": "Anti-choc"
+    },
+    "couleurs": [
+        "Noir",
+        "Bleu",
+        "Transparent"
+    ],
+    "images": [
+        "images/produits/coque-magsafe.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "12 mois"
+  }
+]

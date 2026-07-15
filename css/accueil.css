@@ -1,0 +1,58 @@
+.hero {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+    background: radial-gradient(circle, #ddd, #777);
+}
+.hero h2 {
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    text-transform: uppercase;
+    font-family: var(--waffleFamily);
+}
+.hero p {
+    width: 75%;
+    text-align: justify;
+    text-align-last: center;
+}
+.hero a, .carte a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    padding: 10px;
+    border: 1px solid #000;
+    transition: .2s ease-in;
+}
+.hero a:hover, .carte a:hover {
+    background-color: #ddd;
+}
+
+.categories {
+    max-width: 90%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+.categories aside {
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.categories aside h3 {
+    font-size: clamp(16px, 24px, 30px);
+}
+.categories aside p {
+    width: 65%;
+    text-align: justify;
+}
+.para {
+    width: 75%;
+    margin: auto;
+    text-align: justify;
+    text-align-last: center;
+    padding-bottom: 20px;
+}

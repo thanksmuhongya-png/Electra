@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/produits.css">
+    <link rel="shortcut icon" href="images/electra-logo.png" type="image/x-icon">
+    <title>Produits - Catalogue Electronique</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">Electra</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="produits.html" class="actif">Produits</a>
+            <a href="apropos.html">Àpropos</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Notre catalogue de produits</h2>
+            <p>Explorez l'ensemble de notre sélection de produits électroniques. Parcourez les différentes catégories, utilisez les filtres pour affiner votre recherche et découvrez les caractéristiques de chaque appareil.</p>
+        </section>
+        <section class="produitNav">
+            <div class="search">
+                <input type="search" id="recherche" placeholder="Rechercher un produit...">
+                <button type="submit" id="searchBtn">Rechercher</button>
+            </div>
+            <h3>Categories :</h3>
+            <a href="#" class="filtre active" data-categorie="tous">Tous</a>
+            <a href="#" class="filtre" data-categorie="smartphones">Smartphones</a>
+            <a href="#" class="filtre" data-categorie="ordinateurs">Ordinateurs</a>
+            <a href="#" class="filtre" data-categorie="audio">Audio</a>
+            <a href="#" class="filtre" data-categorie="objets-connectes">Objets connectés</a>
+            <a href="#" class="filtre" data-categorie="gaming">Gaming</a>
+            <a href="#" class="filtre" data-categorie="accessoires">Accessoires</a>
+        </section>
+        <section class="produits">
+            <aside>
+
+            </aside>
+            <article class="cartes" id="listeProduits">
+
+            </article>
+        </section>
+        <section class="fin">
+            <h2>Explorez chaque produit en détail</h3>
+            <p>Chaque produit de notre catalogue a été sélectionné pour répondre aux besoins des particuliers comme des professionnels. Consultez les fiches détaillées pour découvrir les caractéristiques techniques, les fonctionnalités, les images supplémentaires et toutes les informations utiles afin de faire le meilleur choix en toute confiance.</p>
+            <a href="details.html">Voir tous les détails des produits →</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© Copyright 2026 Electra. Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.min.js"></script>
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

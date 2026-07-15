@@ -1,0 +1,151 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    gap: 15px;
+}
+.recherche {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.recherche input {
+    width: 90%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #000;
+}
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.nav a {
+    text-decoration: none;
+    color: #000;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: .2s ease-in;
+}
+.nav a:hover {
+    background-color: #ddd;
+}
+.pt1 {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 15px;
+}
+.images > img {
+    width: 100%;
+}
+.img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 30px;
+    padding: 15px 0;
+}
+.img img {
+    width: 80px;
+    height: 100px;
+    object-fit: contain;
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+}
+.img img:hover {
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.pt1 article {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+.pt1 article h1 {
+    width: 85%;
+    margin: 20px 0;
+}
+.pt1 .prix {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+.pt1 article p {
+    margin: 20px 0;
+    text-align: justify;
+}
+.color {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-transform: uppercase;
+}
+.color span {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+.caracteristiques {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0;
+}
+.caracteristiques h2 {
+    text-transform: uppercase;
+}
+.caracteristiques ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.pt2 {
+    padding: 30px 0;
+}
+.pt2 h2 {
+    text-align: center;
+    padding: 20px 0;
+    font-size: clamp(20px, 30px, 32px);
+}
+.carte a {
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 0 0 5px 5px;
+    text-transform: uppercase;
+}
+.erreur {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.erreur h2 {
+    font-size: clamp(26px, 30px, 34px);
+}
+.erreur a {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #eee;
+    color: #000;
+    transition: .2s ease-in;
+}
+.erreur a:hover {
+    background-color: #ddd;
+}
