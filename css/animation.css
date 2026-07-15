@@ -1,0 +1,28 @@
+.viens * {
+    animation: .5s viens forwards;
+}
+@keyframes viens {
+    from {
+        scale: 0.0;
+        opacity: 0.5;
+    }
+    to {
+        scale: 1.0;
+        opacity: 1.0;
+    }
+}
+
+.milieu, .personnel {
+    animation: milieu;
+    animation-timeline: view();
+}
+@keyframes milieu {
+    from {
+        opacity: 0;
+        transform: translateY(100%) scale(0.75);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0) scale(1.0);
+    }
+}

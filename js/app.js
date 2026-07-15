@@ -31,7 +31,7 @@ function afficherProduits(produits) {
     liste.innerHTML = "";
     produits.forEach(produit => {
         liste.innerHTML += `
-            <a href="details.html?id=${produit.id}" class="carte">
+            <a href="details.html?id=${produit.id}" class="carte milieu">
                 <img src="${produit.image}" alt="${produit.nom}">
                 <span class="categorie">${produit.categorie}</span>
                 <h3>${produit.nom}</h3>
@@ -64,7 +64,7 @@ function afficherProduitsCategorie(produits) {
     });
 
     carte.innerHTML = produitsAleatoires.map(produit => `
-        <div class="carte">
+        <div class="carte milieu">
             <img src="../${produit.image}">
             <h3>${produit.nom}</h3>
             <p>${produit.description}</p>

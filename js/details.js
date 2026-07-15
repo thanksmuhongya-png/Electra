@@ -7,7 +7,7 @@ fetch("../data/produits.json")
         const produit = produits.find(p => p.id === idProduit);
         if (!produit) {
             document.body.innerHTML = `
-                <div class="erreur">
+                <div class="erreur viens">
                     <h2>Produit introuvable</h2>
                     <a href="produits.html">Retour au catalogue</a>
                 </div>
@@ -74,7 +74,7 @@ function afficherProduit(produit, produits) {
         .slice(0, 4);
     section2.innerHTML = "";
     section2.innerHTML += similaires.slice(0, 4).map(p => `
-        <div class="carte">
+        <div class="carte milieu">
             <img src="../${p.image}" alt="${p.nom}">
             <h3>${p.nom}</h3>
             <p>${p.description}</p>
