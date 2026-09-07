@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/produits.css">
     <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/theme.css">
     <link rel="shortcut icon" href="images/electra-logo.png" type="image/x-icon">
     <title>Produits - Catalogue Electronique</title>
 </head>
@@ -21,10 +22,10 @@
     </header>
 
     <main>
-        <section class="hero viens">
+        <!-- <section class="hero viens">
             <h2>Notre catalogue de produits</h2>
             <p>Explorez l'ensemble de notre sélection de produits électroniques. Parcourez les différentes catégories, utilisez les filtres pour affiner votre recherche et découvrez les caractéristiques de chaque appareil.</p>
-        </section>
+        </section> -->
         <section class="produitNav">
             <div class="search">
                 <input type="search" id="recherche" placeholder="Rechercher un produit...">
@@ -59,7 +60,24 @@
         <p>© Copyright 2026 Electra. Tous droits réservés.</p>
     </footer>
 
+    <button id="themeToggle" class="theme-toggle" type="button" aria-label="Activer le mode sombre" title="Changer de thème" >
+        <svg class="theme-icon icon-moon" viewBox="0 0 24 24" aria-hidden="true" >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" />
+        </svg> <!-- Icône SOLEIL --> <svg class="theme-icon icon-sun" viewBox="0 0 24 24" aria-hidden="true" >
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2V4"></path>
+            <path d="M12 20V22"></path>
+            <path d="M4.93 4.93L6.34 6.34"></path>
+            <path d="M17.66 17.66L19.07 19.07"></path>
+            <path d="M2 12H4"></path>
+            <path d="M20 12H22"></path>
+            <path d="M4.93 19.07L6.34 17.66"></path>
+            <path d="M17.66 6.34L19.07 4.93"></path>
+        </svg>
+    </button>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.min.js"></script>
     <script type="module" src="js/app.js"></script>
+    <script src="js/theme.js" defer></script>
 </body>
 </html>

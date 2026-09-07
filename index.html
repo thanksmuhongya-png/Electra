@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/accueil.css">
     <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/theme.css">
     <link rel="shortcut icon" href="images/electra-logo.png" type="image/x-icon">
     <title>Accueil - Catalogue Electronique</title>
 </head>
@@ -21,11 +22,11 @@
     </header>
 
     <main>
-        <section class="hero viens">
+        <!-- <section class="hero viens">
             <h2>Découvrez la technologie de demain</h2>
             <p>Explorez un univers technologique réunissant les dernières innovations en smartphones, ordinateurs, accessoires intelligents et appareils connectés. Découvrez des produits performants, élégants et conçus pour améliorer votre quotidien.</p>
             <a href="produits.html">Explorer les produits</a>
-        </section>
+        </section> -->
         <section class="categories">
             <aside>
                 <h3>Explorez nos catégories</h3>
@@ -34,39 +35,51 @@
             <article class="cartes">
                 <div class="carte milieu">
                     <img src="images/Smartphones.jpg" alt="Smartphones">
-                    <h3>Smartphones</h3>
-                    <p>Découvrez les derniers smartphones alliant puissance, élégance et intelligence. Profitez d'écrans immersifs, de caméras avancées et de performances adaptées à tous vos usages.</p>
-                    <a href="produits.html?categorie=smartphones" data-categorie="smartphones">Explorer les smartphones</a>
+                    <div class="carte-contenu">
+                        <h3>Smartphones</h3>
+                        <p>Découvrez les derniers smartphones alliant puissance, élégance et intelligence. Profitez d'écrans immersifs, de caméras avancées et de performances adaptées à tous vos usages.</p>
+                        <a href="produits.html?categorie=smartphones" data-categorie="smartphones">Explorer</a>
+                    </div>
                 </div>
                 <div class="carte milieu">
                     <img src="images/Ordinateurs.jpg" alt="Ordinateurs">
-                    <h3>Ordinateurs</h3>
-                    <p>Des ordinateurs conçus pour accompagner votre créativité, votre travail et vos loisirs. Retrouvez des machines puissantes adaptées aux professionnels, étudiants et passionnés.</p>
-                    <a href="produits.html?categorie=ordinateurs">Explorer les ordinateurs</a>
+                    <div class="carte-contenu">
+                        <h3>Ordinateurs</h3>
+                        <p>Des ordinateurs conçus pour accompagner votre créativité, votre travail et vos loisirs. Retrouvez des machines puissantes adaptées aux professionnels, étudiants et passionnés.</p>
+                        <a href="produits.html?categorie=ordinateurs">Explorer</a>
+                    </div>
                 </div>
                 <div class="carte milieu">
                     <img src="images/Audio.jpg" alt="Audio">
-                    <h3>Audio</h3>
-                    <p>Plongez dans une expérience sonore exceptionnelle avec des écouteurs et casques offrant une qualité audio supérieure, un confort optimal et des technologies intelligentes.</p>
-                    <a href="produits.html?categorie=audio">Explorer l'audio</a>
+                    <div class="carte-contenu">
+                        <h3>Audio</h3>
+                        <p>Plongez dans une expérience sonore exceptionnelle avec des écouteurs et casques offrant une qualité audio supérieure, un confort optimal et des technologies intelligentes.</p>
+                        <a href="produits.html?categorie=audio">Explorer</a>
+                    </div>
                 </div>
                 <div class="carte milieu">
                     <img src="images/Objets_connectes.jpg" alt="Objets connectés">
-                    <h3>Objets connectés</h3>
-                    <p>Simplifiez votre quotidien grâce aux appareils intelligents qui vous accompagnent partout. Suivez vos activités et contrôlez votre environnement avec des technologies connectées.</p>
-                    <a href="produits.html?categorie=objets-connectes">Explorer les objets connectés</a>
+                    <div class="carte-contenu">
+                        <h3>Objets connectés</h3>
+                        <p>Simplifiez votre quotidien grâce aux appareils intelligents qui vous accompagnent partout. Suivez vos activités et contrôlez votre environnement avec des technologies connectées.</p>
+                        <a href="produits.html?categorie=objets-connectes">Explorer</a>
+                    </div>
                 </div>
                 <div class="carte milieu">
                     <img src="images/Gaming.jpg" alt="Gaming">
-                    <h3>Gaming</h3>
-                    <p>Améliorez votre expérience de jeu avec des équipements performants conçus pour les joueurs exigeants. Découvrez des accessoires immersifs et des technologies de nouvelle génération.</p>
-                    <a href="produits.html?categorie=gaming">Explorer le gaming</a>
+                    <div class="carte-contenu">
+                        <h3>Gaming</h3>
+                        <p>Améliorez votre expérience de jeu avec des équipements performants conçus pour les joueurs exigeants. Découvrez des accessoires immersifs et des technologies de nouvelle génération.</p>
+                        <a href="produits.html?categorie=gaming">Explorer</a>
+                    </div>
                 </div>
                 <div class="carte milieu">
                     <img src="images/Accessoires.jpg" alt="Accessoires">
-                    <h3>Accessoires</h3>
-                    <p>Complétez vos appareils avec des accessoires fiables et élégants. Retrouvez tout ce qu'il vous faut pour protéger, charger et améliorer votre expérience numérique.</p>
-                    <a href="produits.html?categorie=accessoires">Explorer les accessoires</a>
+                    <div class="carte-contenu">
+                        <h3>Accessoires</h3>
+                        <p>Complétez vos appareils avec des accessoires fiables et élégants. Retrouvez tout ce qu'il vous faut pour protéger, charger et améliorer votre expérience numérique.</p>
+                        <a href="produits.html?categorie=accessoires">Explorer</a>
+                    </div>
                 </div>
             </article>
         </section>
@@ -124,8 +137,25 @@
         <p>© Copyright 2026 Electra. Tous droits réservés.</p>
     </footer>
 
+    <button id="themeToggle" class="theme-toggle" type="button" aria-label="Activer le mode sombre" title="Changer de thème" >
+        <svg class="theme-icon icon-moon" viewBox="0 0 24 24" aria-hidden="true" >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" />
+        </svg> <!-- Icône SOLEIL --> <svg class="theme-icon icon-sun" viewBox="0 0 24 24" aria-hidden="true" >
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2V4"></path>
+            <path d="M12 20V22"></path>
+            <path d="M4.93 4.93L6.34 6.34"></path>
+            <path d="M17.66 17.66L19.07 19.07"></path>
+            <path d="M2 12H4"></path>
+            <path d="M20 12H22"></path>
+            <path d="M4.93 19.07L6.34 17.66"></path>
+            <path d="M17.66 6.34L19.07 4.93"></path>
+        </svg>
+    </button>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.min.js"></script>
     <script type="module" src="js/script.js" defer></script>
     <script type="module" src="js/app.js"></script>
+    <script src="js/theme.js" defer></script>
 </body>
 </html>

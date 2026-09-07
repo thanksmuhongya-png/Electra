@@ -1,101 +1,767 @@
+/* =========================================================
+   HERO
+========================================================= */
+
 .hero {
-    height: 90vh;
+    min-height: 90vh;
+
     display: flex;
     flex-direction: column;
-    align-items: center;
+
     justify-content: center;
-    gap: 15px;
-    background: radial-gradient(circle, #ddd, #777)
+    align-items: center;
+
+    gap: var(--gap-md);
+
+    padding:
+        var(--space-15)
+        var(--page-padding);
+
+    background:
+        var(--gradient-bg);
+
+    text-align: center;
+
+    overflow: hidden;
+
+    position: relative;
 }
+
+
+/* Effet lumineux subtil */
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 400px;
+    height: 400px;
+
+    top: -200px;
+    right: -150px;
+
+    background:
+        rgba(255, 255, 255, 0.12);
+
+    border-radius: var(--radius-full);
+
+    filter: blur(40px);
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   TITRE HERO
+========================================================= */
+
 .hero h2 {
-    font-family: var(--waffleFamily);
-    font-size: clamp(26px, 30px, 32px);
+    position: relative;
+    z-index: var(--z-base);
+
+    max-width: 1000px;
+
+    font-family: var(--font-secondary);
+
+    font-size: var(--title-xl);
+
+    font-weight: var(--weight-bold);
+
+    line-height: var(--line-tight);
+
+    text-transform: uppercase;
+
+    letter-spacing: var(--letter-large);
+
+    color: var(--color-primary);
+
+    text-shadow:
+        1px
+        2px
+        4px
+        rgba(0, 0, 0, 0.15);
+
+    transition:
+        transform var(--transition),
+        text-shadow var(--transition);
 }
+
+.hero h2:hover {
+    transform: var(--translate-small);
+
+    text-shadow:
+        2px
+        4px
+        8px
+        rgba(0, 0, 0, 0.20);
+}
+
+
+/* =========================================================
+   DESCRIPTION HERO
+========================================================= */
+
 .hero p {
-    width: 75%;
+    position: relative;
+    z-index: var(--z-base);
+
+    width: min(75%, 850px);
+
+    margin: 0;
+
+    color: var(--color-text);
+
+    font-family: var(--font-primary);
+
+    font-size: var(--text-md);
+
+    font-weight: var(--weight-normal);
+
+    line-height: var(--line-relaxed);
+
     text-align: justify;
+
     text-align-last: center;
 }
+
+
+/* =========================================================
+   À PROPOS
+========================================================= */
+
 .propos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    height: auto;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(280px, 1fr)
+        );
+
+    gap: var(--space-12);
+
+    width: min(90%, 1300px);
+
+    margin:
+        var(--space-12)
+        auto;
+
+    align-items: center;
 }
+
+
+/* =========================================================
+   IMAGE À PROPOS
+========================================================= */
+
+.propos aside {
+    overflow: hidden;
+
+    border:
+        var(--border-width)
+        solid
+        var(--color-border-light);
+
+    border-radius:
+        var(--radius-lg);
+
+    box-shadow:
+        var(--shadow-lg);
+
+    background:
+        var(--color-surface);
+}
+
 .propos aside img {
+    display: block;
+
     width: 100%;
+
+    min-height: 300px;
+
     object-fit: cover;
+
+    transition:
+        transform var(--transition-slow);
 }
+
+.propos aside:hover img {
+    transform: var(--scale-hover);
+}
+
+
+/* =========================================================
+   CONTENU À PROPOS
+========================================================= */
+
 .propos article {
     display: flex;
+
     flex-direction: column;
+
     justify-content: center;
-    padding: 0 10px;
+
+    padding: var(--space-8);
 }
-.propos li, .propos p {
-    width: 75%;
-    text-align: justify;
-    padding: 10px 0;
+
+
+/* =========================================================
+   TEXTE À PROPOS
+========================================================= */
+
+.propos li,
+.propos p {
+    width: min(75%, 700px);
+
+    padding:
+        var(--space-3)
+        0;
+
+    color:
+        var(--color-text-light);
+
+    font-size:
+        var(--text-md);
+
+    line-height:
+        var(--line-relaxed);
+
+    text-align:
+        justify;
 }
+
+.propos li {
+    padding-left:
+        var(--space-1);
+}
+
+.propos li::marker {
+    font-weight:
+        var(--weight-bold);
+
+    color:
+        var(--color-primary);
+}
+
+
+/* =========================================================
+   CHIFFRES
+========================================================= */
+
 .chiffres {
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
-    gap: 15px;
-    padding-top: 20px;
+
+    gap: var(--gap-md);
+
+    padding:
+        var(--space-12)
+        0;
 }
-.chiffres div {
+
+
+/* =========================================================
+   CONTENEUR DES CHIFFRES
+========================================================= */
+
+.chiffres > div {
     display: flex;
+
     flex-wrap: wrap;
-    width: 100%;
+
     justify-content: space-evenly;
-    padding: 20px 0;
-    background-color: rgb(0, 140, 255);
+
+    align-items: center;
+
+    gap: var(--gap-lg);
+
+    width: 100%;
+
+    padding:
+        var(--space-10)
+        var(--space-8);
+
+    background:
+        linear-gradient(
+            135deg,
+            #008cff,
+            #006dcc
+        );
+
+    box-shadow:
+        var(--shadow-lg);
 }
+
+
+/* =========================================================
+   ÉLÉMENT CHIFFRE
+========================================================= */
+
 .chiffres article {
     display: flex;
+
     align-items: center;
-    gap: 10px;
-    color: #fff;
+
+    gap: var(--gap-sm);
+
+    padding:
+        var(--space-4)
+        var(--space-8);
+
+    color:
+        var(--color-white);
+
+    border-radius:
+        var(--radius-md);
+
+    transition:
+        transform var(--transition),
+        background var(--transition),
+        box-shadow var(--transition);
 }
+
+.chiffres article:hover {
+    transform:
+        var(--translate-hover);
+
+    background:
+        rgba(255, 255, 255, 0.12);
+
+    box-shadow:
+        var(--shadow-sm);
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
 .contact {
     display: flex;
+
     justify-content: space-evenly;
+
+    align-items: center;
+
     flex-wrap: wrap;
-    padding: 20px 0;
-    gap: 10px;
+
+    width: min(100%, var(--content-width));
+
+    margin-inline: auto;
+
+    padding:
+        var(--space-12)
+        var(--page-padding);
+
+    gap: var(--gap-md);
 }
+
+
+/* =========================================================
+   LIENS CONTACT
+========================================================= */
+
 .contact a {
     display: flex;
-    align-items: center;
-    gap: 5px;
-    text-decoration: none;
-    color: #000;
-    padding: 5px;
-    border-radius: 4px;
-    transition: .2s ease-in;
-}
-.contact a:hover {
-    box-shadow: 0 0 5px #aaa;
 
+    align-items: center;
+
+    gap: var(--gap-sm);
+
+    min-height: 65px;
+
+    padding:
+        var(--space-4)
+        var(--space-6);
+
+    color:
+        var(--color-primary);
+
+    background:
+        transparent;
+
+    border:
+        var(--border-width)
+        solid
+        transparent;
+
+    border-radius:
+        var(--radius-md);
+
+    text-decoration: none;
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition),
+        background var(--transition),
+        border-color var(--transition);
 }
+
+.contact a:hover {
+    background:
+        var(--color-bg-light);
+
+    border-color:
+        var(--color-border-light);
+
+    box-shadow:
+        var(--shadow-md);
+
+    transform:
+        var(--translate-small);
+}
+
+
+/* =========================================================
+   IMAGE CONTACT
+========================================================= */
+
 .contact img {
-    width: clamp(30px, 50px, 80px);
-    height: clamp(20px, 50px, 80px);
-    object-fit: cover;
+    width: 45px;
+    height: 45px;
+
+    object-fit:
+        var(--image-object-fit);
+
+    transition:
+        transform var(--transition);
 }
+
+.contact a:hover img {
+    transform:
+        var(--scale-hover);
+}
+
+
+/* =========================================================
+   TEXTE CONTACT
+========================================================= */
+
 .contact p {
-    font-size: clamp(20px, 24px, 28px);
+    margin: 0;
+
+    font-family:
+        var(--font-primary);
+
+    font-size:
+        clamp(
+            var(--text-lg),
+            2vw,
+            var(--text-2xl)
+        );
+
+    font-weight:
+        var(--weight-medium);
+
+    line-height:
+        var(--line-normal);
 }
+
+
+/* =========================================================
+   TABLETTE
+========================================================= */
+
 @media (max-width: 768px) {
+
+    .hero {
+        min-height: 75vh;
+
+        padding:
+            var(--space-13)
+            var(--space-7);
+    }
+
+    .hero h2 {
+        font-size:
+            var(--title-lg);
+    }
+
+    .hero p {
+        width: 90%;
+
+        font-size:
+            var(--text-sm);
+    }
+
+
+    /* À propos */
+
+    .propos {
+        width: 94%;
+
+        gap:
+            var(--space-9);
+
+        margin:
+            var(--space-10)
+            auto;
+    }
+
+    .propos article {
+        padding:
+            var(--space-4);
+    }
+
+    .propos li,
+    .propos p {
+        width: 90%;
+
+        font-size:
+            var(--text-sm);
+    }
+
+    .propos aside img {
+        min-height: 250px;
+    }
+
+
+    /* Chiffres */
+
+    .chiffres {
+        padding:
+            var(--space-10)
+            0;
+    }
+
+    .chiffres > div {
+        gap:
+            var(--gap-sm);
+
+        padding:
+            var(--space-9)
+            var(--space-4);
+    }
+
+    .chiffres article {
+        padding:
+            var(--space-3)
+            var(--space-5);
+    }
+
+
+    /* Contact */
+
     .contact {
-        align-items: center;
+        gap:
+            var(--gap-sm);
     }
+
     .contact img {
-        width: clamp(20px, 40px, 60px);
-        height: clamp(20px, 40px, 60px);
+        width: 40px;
+        height: 40px;
     }
+
     .contact p {
-        font-size: clamp(16px, 20px, 24px);
+        font-size:
+            clamp(
+                var(--text-md),
+                2.5vw,
+                var(--text-xl)
+            );
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .hero {
+        min-height: 70vh;
+
+        gap:
+            var(--gap-sm);
+
+        padding:
+            var(--space-12)
+            var(--space-5);
+    }
+
+    .hero h2 {
+        font-size:
+            var(--title-md);
+
+        letter-spacing:
+            var(--letter-medium);
+    }
+
+    .hero p {
+        width: 95%;
+
+        font-size:
+            var(--text-sm);
+
+        line-height:
+            var(--line-relaxed);
+
+        text-align:
+            center;
+    }
+
+
+    /* À propos */
+
+    .propos {
+        grid-template-columns: 1fr;
+
+        width: 94%;
+
+        gap:
+            var(--gap-md);
+
+        margin:
+            var(--space-10)
+            auto;
+    }
+
+    .propos aside img {
+        min-height: 220px;
+        max-height: 280px;
+    }
+
+    .propos article {
+        padding:
+            var(--space-1);
+    }
+
+    .propos li,
+    .propos p {
+        width: 100%;
+
+        font-size:
+            var(--text-sm);
+
+        line-height:
+            var(--line-relaxed);
+    }
+
+
+    /* Chiffres */
+
+    .chiffres {
+        gap:
+            var(--gap-sm);
+
+        padding:
+            var(--space-9)
+            0;
+    }
+
+    .chiffres > div {
+        flex-direction: column;
+
+        gap:
+            var(--gap-sm);
+
+        padding:
+            var(--space-9)
+            var(--space-3);
+    }
+
+    .chiffres article {
+        width: 90%;
+
+        justify-content:
+            center;
+
+        padding:
+            var(--space-3)
+            var(--space-5);
+    }
+
+
+    /* Contact */
+
+    .contact {
+        flex-direction: column;
+
+        width: 100%;
+
+        padding:
+            var(--space-10)
+            var(--space-3);
+
+        gap:
+            var(--gap-sm);
+    }
+
+    .contact a {
+        width: 90%;
+
+        justify-content:
+            center;
+    }
+
+    .contact img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .contact p {
+        font-size:
+            var(--text-lg);
+    }
+}
+
+
+/* =========================================================
+   TRÈS PETITS ÉCRANS
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .hero {
+        min-height: 65vh;
+
+        padding:
+            var(--space-10)
+            var(--space-4);
+    }
+
+    .hero h2 {
+        font-size:
+            var(--text-2xl);
+    }
+
+    .hero p {
+        width: 100%;
+
+        font-size:
+            var(--text-xs);
+    }
+
+
+    .propos {
+        width: 95%;
+    }
+
+    .propos aside img {
+        min-height: 190px;
+    }
+
+    .propos li,
+    .propos p {
+        font-size:
+            var(--text-xs);
+    }
+
+
+    .chiffres article {
+        width: 95%;
+
+        padding:
+            var(--space-3);
+    }
+
+
+    .contact a {
+        width: 95%;
     }
 }

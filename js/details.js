@@ -71,9 +71,9 @@ function afficherProduit(produit, produits) {
             p.categorie === produit.categorie &&
             p.id !== produit.id
         )
-        .slice(0, 4);
+        .slice(0, 10);
     section2.innerHTML = "";
-    section2.innerHTML += similaires.slice(0, 4).map(p => `
+    section2.innerHTML += similaires.slice(0, 10).map(p => `
         <div class="carte milieu">
             <img src="../${p.image}" alt="${p.nom}">
             <h3>${p.nom}</h3>

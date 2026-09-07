@@ -1,58 +1,571 @@
+/* =========================================================
+   HERO
+========================================================= */
+
 .hero {
-    min-height: 90vh;
+    min-height: 280px;
+
     display: flex;
     flex-direction: column;
+
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    padding: 0 20px;
-    background: radial-gradient(circle, #ddd, #777);
-}
-.hero h2 {
+
+    gap: var(--gap-sm);
+
+    padding:
+        var(--space-14)
+        var(--page-padding);
+
+    background:
+        radial-gradient(
+            circle at center,
+            #f8f8f8 0%,
+            #d8d8d8 45%,
+            #858585 100%
+        );
+
+    border-radius:
+        0
+        0
+        var(--radius-xl)
+        var(--radius-xl);
+
+    box-shadow:
+        0
+        8px
+        25px
+        rgba(0, 0, 0, 0.15);
+
     text-align: center;
-    font-size: clamp(1.5rem, 4vw, 3rem);
-    text-transform: uppercase;
-    font-family: var(--waffleFamily);
-}
-.hero p {
-    width: 75%;
-    text-align: justify;
-    text-align-last: center;
-}
-.hero a, .carte a {
-    text-decoration: none;
-    color: #000;
-    text-transform: uppercase;
-    padding: 10px;
-    border: 1px solid #000;
-    transition: .2s ease-in;
-}
-.hero a:hover, .carte a:hover {
-    background-color: #ddd;
+
+    overflow: hidden;
 }
 
-.categories {
-    max-width: 90%;
-    margin: auto;
-    padding-bottom: 30px;
+
+/* =========================================================
+   TITRE HERO
+========================================================= */
+
+.hero h2 {
+    margin: 0;
+
+    max-width: 1000px;
+
+    font-family: var(--font-secondary);
+
+    font-size: var(--title-lg);
+
+    font-weight: var(--weight-bold);
+
+    line-height: var(--line-tight);
+
+    letter-spacing: var(--letter-xl);
+
+    color: var(--color-primary);
+
+    text-align: center;
+
+    text-transform: uppercase;
+
+    text-shadow:
+        1px
+        2px
+        3px
+        rgba(0, 0, 0, 0.15);
+
+    transition:
+        transform var(--transition),
+        text-shadow var(--transition);
 }
-.categories aside {
-    padding: 25px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+
+.hero h2:hover {
+    transform: var(--translate-small);
+
+    text-shadow:
+        2px
+        4px
+        8px
+        rgba(0, 0, 0, 0.20);
 }
-.categories aside h3 {
-    font-size: clamp(16px, 24px, 30px);
-}
-.categories aside p {
-    width: 65%;
-    text-align: justify;
-}
-.para {
-    width: 75%;
-    margin: auto;
+
+
+/* =========================================================
+   DESCRIPTION HERO
+========================================================= */
+
+.hero p {
+    width: min(75%, 800px);
+
+    margin:
+        var(--space-1)
+        0
+        var(--space-3);
+
+    color: var(--color-text);
+
+    font-family: var(--font-primary);
+
+    font-size: var(--text-md);
+
+    font-weight: var(--weight-normal);
+
+    line-height: var(--line-relaxed);
+
     text-align: justify;
     text-align-last: center;
-    padding-bottom: 20px;
+}
+
+
+/* =========================================================
+   BOUTONS HERO + CARTES
+========================================================= */
+
+.hero a,
+.carte a {
+    display: inline-flex;
+
+    justify-content: center;
+    align-items: center;
+
+    min-height: var(--button-height);
+
+    padding:
+        var(--button-padding-y)
+        var(--button-padding-x);
+
+    color: var(--color-primary);
+
+    background:
+        rgba(255, 255, 255, 0.25);
+
+    border:
+        var(--border-width)
+        solid
+        var(--color-primary);
+
+    border-radius: var(--button-radius);
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+    font-size: var(--button-font-size);
+
+    font-weight: var(--button-font-weight);
+
+    letter-spacing: var(--letter-medium);
+
+    backdrop-filter: var(--blur-sm);
+
+    transition:
+        background var(--transition),
+        color var(--transition),
+        border-color var(--transition),
+        transform var(--transition),
+        box-shadow var(--transition);
+}
+
+.hero a:hover,
+.carte a:hover {
+    color: var(--color-white);
+
+    background:
+        var(--color-primary);
+
+    border-color:
+        var(--color-primary);
+
+    transform:
+        var(--translate-small);
+
+    box-shadow:
+        var(--shadow-md);
+}
+
+
+/* =========================================================
+   CATEGORIES
+========================================================= */
+
+.categories {
+    width: min(90%, var(--content-width));
+
+    margin:
+        0
+        auto;
+
+    padding:
+        var(--space-4)
+        0
+        var(--space-12);
+}
+
+
+/* =========================================================
+   SECTION CATÉGORIE
+========================================================= */
+
+.categories aside {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--gap-sm);
+
+    padding:
+        var(--space-12)
+        0;
+}
+
+
+/* =========================================================
+   TITRE CATÉGORIE
+========================================================= */
+
+.categories aside h3 {
+    position: relative;
+
+    margin: 0;
+
+    padding-left:
+        var(--space-6);
+
+    font-family:
+        var(--font-secondary);
+
+    font-size:
+        var(--title-md);
+
+    font-weight:
+        var(--weight-bold);
+
+    line-height:
+        var(--line-tight);
+
+    letter-spacing:
+        var(--letter-large);
+
+    color:
+        var(--color-primary);
+
+    text-transform:
+        uppercase;
+}
+
+
+/* =========================================================
+   BARRE DU TITRE
+========================================================= */
+
+.categories aside h3::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 10%;
+
+    width:
+        var(--border-thick);
+
+    height:
+        80%;
+
+    background:
+        var(--color-primary);
+
+    border-radius:
+        var(--radius-full);
+
+    transition:
+        height var(--transition),
+        transform var(--transition);
+}
+
+.categories aside h3:hover::before {
+    height: 100%;
+
+    transform:
+        translateY(-10%);
+}
+
+
+/* =========================================================
+   DESCRIPTION CATÉGORIE
+========================================================= */
+
+.categories aside p {
+    width: min(65%, 750px);
+
+    margin: 0;
+
+    color:
+        var(--color-text-light);
+
+    font-size:
+        var(--text-md);
+
+    line-height:
+        var(--line-relaxed);
+
+    text-align:
+        justify;
+}
+
+
+/* =========================================================
+   PARAGRAPHE GÉNÉRAL
+========================================================= */
+
+.para {
+    width: min(75%, 900px);
+
+    margin:
+        0
+        auto;
+
+    padding-bottom:
+        var(--space-9);
+
+    color:
+        var(--color-text-light);
+
+    font-family:
+        var(--font-primary);
+
+    font-size:
+        var(--text-md);
+
+    line-height:
+        var(--line-relaxed);
+
+    text-align:
+        justify;
+
+    text-align-last:
+        center;
+}
+
+
+/* =========================================================
+   PETITE LIGNE DÉCORATIVE
+========================================================= */
+
+.para::after {
+    content: "";
+
+    display: block;
+
+    width: 60px;
+
+    height: 2px;
+
+    margin:
+        var(--space-6)
+        auto
+        0;
+
+    background:
+        var(--color-primary);
+
+    border-radius:
+        var(--radius-full);
+}
+
+
+/* =========================================================
+   TABLETTE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: 250px;
+
+        padding:
+            var(--space-13)
+            var(--space-7);
+    }
+
+    .hero h2 {
+        font-size:
+            var(--title-md);
+
+        letter-spacing:
+            var(--letter-large);
+    }
+
+    .hero p,
+    .para {
+        width: 90%;
+    }
+
+    .categories {
+        width: 94%;
+    }
+
+    .categories aside {
+        padding:
+            var(--space-10)
+            0;
+    }
+
+    .categories aside p {
+        width: 90%;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .hero {
+        min-height: 230px;
+
+        gap:
+            var(--gap-sm);
+
+        padding:
+            var(--space-12)
+            var(--space-5);
+
+        border-radius:
+            0
+            0
+            var(--radius-lg)
+            var(--radius-lg);
+    }
+
+    .hero h2 {
+        font-size:
+            var(--title-md);
+
+        letter-spacing:
+            var(--letter-medium);
+    }
+
+    .hero p {
+        width: 95%;
+
+        margin:
+            var(--space-1)
+            0
+            var(--space-3);
+
+        font-size:
+            var(--text-sm);
+
+        line-height:
+            var(--line-relaxed);
+
+        text-align:
+            center;
+    }
+
+    .hero a,
+    .carte a {
+        min-height:
+            36px;
+
+        padding:
+            var(--space-3)
+            var(--space-6);
+
+        font-size:
+            var(--text-xs);
+    }
+
+    .categories {
+        width: 94%;
+
+        padding-bottom:
+            var(--space-10);
+    }
+
+    .categories aside {
+        gap:
+            var(--gap-sm);
+
+        padding:
+            var(--space-9)
+            0;
+    }
+
+    .categories aside h3 {
+        padding-left:
+            var(--space-5);
+
+        font-size:
+            var(--text-xl);
+
+        letter-spacing:
+            var(--letter-medium);
+    }
+
+    .categories aside h3::before {
+        width:
+            var(--border-medium);
+    }
+
+    .categories aside p,
+    .para {
+        width: 95%;
+
+        font-size:
+            var(--text-sm);
+
+        line-height:
+            var(--line-relaxed);
+
+        text-align:
+            justify;
+    }
+
+    .para {
+        padding-bottom:
+            var(--space-7);
+    }
+}
+
+
+/* =========================================================
+   TRÈS PETITS ÉCRANS
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .hero {
+        padding:
+            var(--space-10)
+            var(--space-4);
+    }
+
+    .hero h2 {
+        font-size:
+            var(--text-2xl);
+    }
+
+    .hero p {
+        width: 100%;
+
+        font-size:
+            var(--text-xs);
+    }
+
+    .categories aside h3 {
+        font-size:
+            var(--text-lg);
+    }
+
+    .categories aside p,
+    .para {
+        width: 100%;
+
+        font-size:
+            var(--text-xs);
+    }
 }

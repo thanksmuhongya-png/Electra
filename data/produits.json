@@ -24,7 +24,10 @@
     "images": [
         "images/produits/iphone-17-pro-max.png",
         "images/produits/iphone-17-pro-max-face.png",
-        "images/produits/iphone-17-pro-max-dos.png"
+        "images/produits/iphone-17-pro-max-dos.png",
+        "images/produits/iphone-17-pro-max-cote.png",
+        "images/produits/iphone-17-pro-max-couleurs.png",
+        "images/produits/iphone-17-pro-max-accessoires.png"
     ],
     "disponibilite": "Disponible",
     "garantie": "24 mois"
@@ -170,7 +173,9 @@
         "Argent"
     ],
     "images": [
-        "images/produits/macbook-pro-m5.png"
+        "images/produits/macbook-pro-m5.png",
+        "images/produits/macbook-pro-m5-face.png",
+        "images/produits/macbook-pro-m5-dos.png"
     ],
     "disponibilite": "Disponible",
     "garantie": "24 mois"
@@ -812,6 +817,258 @@
     ],
     "images": [
         "images/produits/coque-magsafe.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "12 mois"
+  },
+
+  {
+    "id": 31,
+    "nom": "Chargeur Rapide USB-C 65W",
+    "marque": "Electra Power",
+    "categorie": "accessoires",
+    "prix": 39,
+    "image": "images/produits/chargeur-65w.png",
+    "description": "Un chargeur compact et puissant permettant de recharger rapidement smartphones, tablettes et autres appareils compatibles.",
+    "caracteristiques": {
+      "puissance": "65W",
+      "connectique": "USB-C",
+      "technologie": "Charge rapide",
+      "protection": "Surchauffe et surtension"
+    },
+    "couleurs": [
+      "Blanc",
+      "Noir"
+    ],
+    "images": [
+      "images/produits/chargeur-65w.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "12 mois"
+  },
+
+  {
+    "id": 32,
+    "nom": "Écouteurs Bluetooth Pro",
+    "marque": "SoundMax",
+    "categorie": "audio",
+    "prix": 59,
+    "image": "images/produits/ecouteurs-bluetooth.png",
+    "description": "Des écouteurs sans fil offrant un son clair, des basses puissantes et une excellente autonomie.",
+    "caracteristiques": {
+      "connexion": "Bluetooth 5.3",
+      "autonomie": "30 heures",
+      "audio": "Stéréo haute qualité",
+      "protection": "Résistance aux éclaboussures"
+    },
+    "couleurs": [
+      "Noir",
+      "Blanc"
+    ],
+    "images": [
+      "images/produits/ecouteurs-bluetooth.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "12 mois"
+  },
+
+  {
+    "id": 33,
+    "nom": "Montre Connectée Active",
+    "marque": "TechFit",
+    "categorie": "montres",
+    "prix": 89,
+    "image": "images/produits/montre-connectee.png",
+    "description": "Une montre intelligente élégante avec suivi de l'activité, notifications et fonctionnalités adaptées au quotidien.",
+    "caracteristiques": {
+      "ecran": "AMOLED 1.7 pouces",
+      "connexion": "Bluetooth",
+      "autonomie": "7 jours",
+      "resistance": "Étanche IP68"
+    },
+    "couleurs": [
+      "Noir",
+      "Bleu",
+      "Argent"
+    ],
+    "images": [
+      "images/produits/montre-connectee.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "12 mois"
+  },
+
+  {
+    "id": 34,
+    "nom": "Power Bank 20000mAh",
+    "marque": "PowerMax",
+    "categorie": "accessoires",
+    "prix": 45,
+    "image": "images/produits/powerbank-20000.png",
+    "description": "Une batterie externe haute capacité idéale pour recharger vos appareils plusieurs fois lors de vos déplacements.",
+    "caracteristiques": {
+      "capacite": "20000mAh",
+      "ports": "USB-A et USB-C",
+      "technologie": "Charge rapide",
+      "protection": "Multi-protection"
+    },
+    "couleurs": [
+      "Noir",
+      "Gris"
+    ],
+    "images": [
+      "images/produits/powerbank-20000.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "12 mois"
+  },
+
+  {
+    "id": 35,
+    "nom": "Clavier Mécanique RGB",
+    "marque": "GameTech",
+    "categorie": "accessoires",
+    "prix": 79,
+    "image": "images/produits/clavier-mecanique.png",
+    "description": "Un clavier mécanique performant avec rétroéclairage RGB, idéal pour le gaming et la programmation.",
+    "caracteristiques": {
+      "type": "Mécanique",
+      "connexion": "USB",
+      "eclairage": "RGB",
+      "touches": "104 touches"
+    },
+    "couleurs": [
+      "Noir",
+      "Blanc"
+    ],
+    "images": [
+      "images/produits/clavier-mecanique.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "24 mois"
+  },
+
+  {
+    "id": 36,
+    "nom": "Souris Sans Fil Ergonomique",
+    "marque": "TechMouse",
+    "categorie": "accessoires",
+    "prix": 29,
+    "image": "images/produits/souris-sans-fil.png",
+    "description": "Une souris confortable et précise conçue pour améliorer la productivité et le confort quotidien.",
+    "caracteristiques": {
+      "connexion": "Bluetooth 5.0",
+      "precision": "1600 DPI",
+      "autonomie": "6 mois",
+      "ergonomie": "Main droite"
+    },
+    "couleurs": [
+      "Noir",
+      "Gris",
+      "Blanc"
+    ],
+    "images": [
+      "images/produits/souris-sans-fil.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "12 mois"
+  },
+
+  {
+    "id": 37,
+    "nom": "Enceinte Bluetooth Portable",
+    "marque": "SoundWave",
+    "categorie": "audio",
+    "prix": 69,
+    "image": "images/produits/enceinte-bluetooth.png",
+    "description": "Une enceinte portable compacte offrant un son puissant et une autonomie idéale pour les sorties.",
+    "caracteristiques": {
+      "puissance": "20W",
+      "connexion": "Bluetooth 5.2",
+      "autonomie": "15 heures",
+      "resistance": "IPX7"
+    },
+    "couleurs": [
+      "Noir",
+      "Bleu",
+      "Rouge"
+    ],
+    "images": [
+      "images/produits/enceinte-bluetooth.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "12 mois"
+  },
+
+  {
+    "id": 38,
+    "nom": "Support Smartphone Aluminium",
+    "marque": "Electra Stand",
+    "categorie": "accessoires",
+    "prix": 25,
+    "image": "images/produits/support-smartphone.png",
+    "description": "Un support élégant en aluminium permettant de maintenir votre smartphone dans une position confortable.",
+    "caracteristiques": {
+      "materiau": "Aluminium",
+      "compatibilite": "Smartphones",
+      "reglage": "Angle ajustable",
+      "base": "Antidérapante"
+    },
+    "couleurs": [
+      "Argent",
+      "Noir"
+    ],
+    "images": [
+      "images/produits/support-smartphone.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "12 mois"
+  },
+
+  {
+    "id": 39,
+    "nom": "Câble USB-C Premium",
+    "marque": "Electra Cable",
+    "categorie": "accessoires",
+    "prix": 15,
+    "image": "images/produits/cable-usbc.png",
+    "description": "Un câble USB-C renforcé conçu pour la recharge rapide et le transfert de données.",
+    "caracteristiques": {
+      "longueur": "2 mètres",
+      "connectique": "USB-C vers USB-C",
+      "puissance": "100W",
+      "materiau": "Nylon tressé"
+    },
+    "couleurs": [
+      "Noir",
+      "Blanc"
+    ],
+    "images": [
+      "images/produits/cable-usbc.png"
+    ],
+    "disponibilite": "Disponible",
+    "garantie": "12 mois"
+  },
+
+  {
+    "id": 40,
+    "nom": "Webcam Full HD 1080p",
+    "marque": "VisionPro",
+    "categorie": "accessoires",
+    "prix": 55,
+    "image": "images/produits/webcam-fullhd.png",
+    "description": "Une webcam Full HD offrant une image nette pour les visioconférences, les cours en ligne et le streaming.",
+    "caracteristiques": {
+      "resolution": "1920 × 1080",
+      "image": "30 FPS",
+      "microphone": "Intégré",
+      "connexion": "USB"
+    },
+    "couleurs": [
+      "Noir"
+    ],
+    "images": [
+      "images/produits/webcam-fullhd.png"
     ],
     "disponibilite": "Disponible",
     "garantie": "12 mois"
